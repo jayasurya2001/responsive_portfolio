@@ -1,0 +1,340 @@
+:root, html{
+	--text-primary: #cc005f;
+	--text-secondary: #888888;
+	--bg-morelight: #e9ecef;
+}
+body{
+	font-family: 'Poppins';
+}
+#opacity {
+	background: #151515 url(../img/intro-bg.jpg) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: difference;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	position: relative;
+	filter: brightness(25%);
+	opacity: .95;
+}
+.color-primary{
+	color: var(--text-primary);
+	font-weight: bolder;
+}
+
+.intro-tags
+{
+	position: absolute;
+	transform: translateY(-520px);
+}
+
+.btn-hover:active, .btn-hover:hover{
+	border-color: var(--text-primary);
+	background-color: transparent;
+}
+
+h3{
+	letter-spacing: 4px;
+}
+.intro-position{
+	margin-left: 10px;
+	letter-spacing: 2px;
+	font-family: serif;
+}
+
+.mylead{
+	font-family: "lora-regular", serif;
+    color: #888888;
+	font-size: 1.5rem;
+	text-align: justify;
+	margin: 1rem 2.5rem;
+}
+.profile{
+	margin: 1rem 2.5rem;
+}
+.break-text{
+	font-size: 1.5rem;
+}
+
+.about-child{
+	margin: 25px 0;
+}
+
+.about-child span{
+	color: var(--text-secondary);
+}
+.button-hover:hover{
+	background-color: #ffffff;
+	color: #151515;
+}
+.span{
+	color: var(--text-secondary);
+}
+.eduaction-1 h4{
+	font-size: 1.5rem;
+}
+
+.eduaction-1{
+	padding-left: 3rem;
+}
+.bg-morelight{
+	background-color: var(--bg-morelight);
+}
+.marksheets{
+	width: 300px;
+	align-self: center;
+}
+.card:hover{
+	box-shadow: 5px 3px 8px 8px var(--text-secondary);
+}
+.contact{
+	background-color: var(--text-secondary);
+}
+input, textarea{
+	background-color: #151515;
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: 2px solid var(--text-secondary);
+	width: 70%;
+	color: var(--bg-morelight);
+	letter-spacing: 2px;
+}
+input:focus, textarea:focus{
+	outline: none;
+	border: 2px solid var(--text-primary);
+	border-radius: 5px;
+}
+.form-field{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+input{
+	height: 40px;
+}
+
+input[type="submit"]
+{
+	background-color: var(--text-primary);
+	height: 50px;
+	color: var(--bg-morelight);
+}
+.footer-target h5{
+	color: var(--text-primary);
+	letter-spacing: 2.5px;
+}
+.footer-target p{
+	color: var(--text-secondary);
+	letter-spacing: 2px;
+}
+.footer-items{
+	background-color: #151515;
+}
+.footer-social{
+	padding: 0;
+}
+.footer-social li{
+	color: #151515;
+}
+.footer-social li a i{
+	font-size: 1.75rem;
+	color: white;
+}
+.copywright span{
+	color: var(--text-secondary);
+}
+.copywright span a{
+	color: white;
+}
+.card-text-black:any-link{
+	color: black;
+	text-decoration: none;
+}
+.copywright span a:hover, .footer-social li a i:hover{
+	color: var(--text-primary);
+}
+.intro-tags .social{
+	position: absolute;
+	transform: translateY(300px);
+}
+li{
+	list-style-type: none;
+}
+.certificates .card{
+	height: 13rem;
+	width: 16rem;
+}
+.certificates .card img{
+	height: 10rem;
+}
+.certi-two .card{
+	width: 17rem;
+	height: 20rem;
+}
+
+.certi-two .card img{
+	height: 16.5rem;
+}
+.modal-body p{
+	margin-top: 15px;
+	text-align: justify;
+	font-size: .9rem;
+}
+
+@media only screen and (max-width: 765px) {
+	.copywright{
+		text-align: end;
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.intro-tags{
+		gap: 1rem;
+		transform: translateY(-560px);
+	}
+	.mylead{
+		font-size: 1.3rem;
+		margin: 15px 10px;
+		text-wrap: stable;
+	}
+	.break{
+		font-size: 2.5rem;
+	}
+	.intro-position{
+		letter-spacing: 0;
+		margin-top: -3px;
+	}
+	.break-text{
+		font-size: 1.25rem;
+	}
+
+	.profile{
+		margin: 0 10px;
+	}
+	.badge{
+		height: 20px;
+		width: 40px;
+	}
+	.about-child h3, .about-child h4{
+		font-size: 1rem;
+	}
+	.button-class{
+		flex-direction: column;
+		padding: 0 3rem;
+	}
+	.button-class-child{
+		font-size: .8rem;
+	}
+	.eduaction-1{
+		padding-left: 0;
+	}
+	.marksheets{
+		width: 230px;
+		font-size: .8rem;
+	}
+	.project{
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-content: center;
+	}
+	.projects h4{
+		font-size: 1rem;
+		margin-left: 20px;
+	}
+	.footer-items h4{
+		font-size: 1rem;
+	}
+	input, textarea{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 365px)
+{
+	.mylead{
+		font-size: 1rem;
+		margin: 15px 0;
+	}
+	.break{
+		font-size: 1.8rem;
+	}
+	.color-primary{
+		font-size: 1rem;
+	}
+	.break-text{
+		letter-spacing: 0;
+		font-size: 1rem;
+	}
+	.badge{
+		display: none;
+	}
+	.progress{
+		transform: translateY(7px);
+	}
+	.about-child h4{
+		margin: 20px 0;
+		font-size: .8rem;
+	}
+	.profile h2, .inner-container h4{
+		font-size: 1.5rem;
+	}
+	.about-child span{
+		font-size: .75rem;
+	}
+	.proskil{
+		margin-top: -40px;
+	}
+	.eduaction-1 h4{
+		font-size: 1rem;
+	}
+	.marksheets{
+		width: 200px;
+		font-size: .75rem;
+	}
+	.projects h4{
+		font-size: .85rem;
+		line-height: 20px;
+		margin: 0;
+		text-align: center;
+	}
+	.projects .container-fluid{
+		padding: 0;
+	}
+	.card{
+		max-width: 15rem;
+	}
+	.footer-target p{
+		font-size: .75rem;
+	}
+	.footer-target h5{
+		font-size: .9rem;
+	}
+	.icon i{
+		font-size: 2rem;
+	}
+	.copywright{
+		text-align: center;
+	}
+	.footer-social li a i{
+		font-size: 1.25rem;
+	}
+	.copywright span{
+		font-size: .9rem;
+	}
+	.certi-two .card{
+		height: 19rem
+	}
+	.certi-two .card img{
+		height: 16.5;
+	}
+	.certi-two .card .card-body p, .certificates .card .card-body p{
+		font-size: .75rem;
+	}
+	.button-class-child{
+		font-size: .55rem;
+	}
+}
+
